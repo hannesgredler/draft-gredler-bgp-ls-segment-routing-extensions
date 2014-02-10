@@ -57,6 +57,34 @@
       </address>
     </author>
 
+
+    <author fullname="Mach Chen" initials="M." surname="Chen">
+      <organization>Huawei Technologies</organization>
+      <address>
+        <postal>
+          <street>Huawei Building, No. 156 Beiqing Rd.</street>
+          <city>Beijing</city>
+          <code>100095</code>
+          <country>China</country>
+        </postal>
+        <email>mach.chen@huawei.com</email>
+      </address>
+    </author>
+
+    <author fullname="Jeff Tantsura" initials="J." surname="Tantsura">
+      <organization>Ericsson</organization>
+      <address>
+        <postal>
+          <street>300 Holger Way</street>
+          <city>San Jose</city>
+	  <region>CA</region>
+          <code>95134</code>
+          <country>US</country>
+        </postal>
+        <email>jeff.tantsura@ericsson.com</email>
+      </address>
+    </author>
+
     <date day="14" month="February" year="2014"/>
 
     <area>Routing</area>
