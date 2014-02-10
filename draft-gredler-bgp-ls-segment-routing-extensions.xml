@@ -16,20 +16,21 @@
     <title abbrev="BGP LS extensions for Segment Routing">
       BGP Link-State extensions for Segment Routing</title>
 
-    <author fullname="Stefano Previdi" initials="S.P." surname="Previdi">
-      <organization>Cisco Systems, Inc.</organization>
+    <author fullname="Hannes Gredler" initials="H." surname="Gredler" role="editor">
+      <organization>Juniper Networks, Inc.</organization>
       <address>
         <postal>
-          <street>Via Del Serafico, 200</street>
-          <city>Rome</city>
-          <code>00142</code>
-          <country>Italy</country>
+          <street>1194 N. Mathilda Ave.</street>
+          <city>Sunnyvale</city>
+          <region>CA</region>
+          <code>94089</code>
+          <country>US</country>
         </postal>
-        <email>sprividi@cisco.com</email>
+        <email>hannes@juniper.net</email>
       </address>
     </author>
 
-    <author fullname="Saikat Ray" initials="S.R." surname="Ray">
+    <author fullname="Saikat Ray" initials="S." surname="Ray" role="editor">
       <organization>Cisco Systems, Inc.</organization>
       <address>
         <postal>
@@ -43,17 +44,16 @@
       </address>
     </author>
 
-    <author fullname="Hannes Gredler" initials="H." surname="Gredler">
-      <organization>Juniper Networks, Inc.</organization>
+    <author fullname="Stefano Previdi" initials="S." surname="Previdi">
+      <organization>Cisco Systems, Inc.</organization>
       <address>
         <postal>
-          <street>1194 N. Mathilda Ave.</street>
-          <city>Sunnyvale</city>
-          <region>CA</region>
-          <code>94089</code>
-          <country>US</country>
+          <street>Via Del Serafico, 200</street>
+          <city>Rome</city>
+          <code>00142</code>
+          <country>Italy</country>
         </postal>
-        <email>hannes@juniper.net</email>
+        <email>sprividi@cisco.com</email>
       </address>
     </author>
 
