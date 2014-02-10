@@ -132,22 +132,22 @@
 
   <middle>
     <section title="Introduction">
-      <t> Segment Routing (SR) provides a scalable solution that
-      addresses contemporary networks' need for forwarding packets via
-      policy driven paths (that may not be the shortest paths) and
-      forwarding via "middle-boxes" that provide services (such as a
-      firewall) before delivering the packet to the end node. Segment
-      routing is an amalgamation of source routing and MPLS. In
-      Segment Routing, the ingress node prepends a sequence of
+      <t>Segment Routing (SR) allows for a flexible definition of end-to-end
+      paths within link-state topologies by encoding paths as sequences of
+      topological sub-paths, called "segments". 
+
+      Segment routing is an amalgamation of source routing and MPLS.
+      In Segment Routing, the ingress node prepends a sequence of
       instructions, called "segments", to the packet. The SR capable
       nodes sequentially execute the instructions on the packet to
       achieve packet forwarding via required topological paths as well
-      as services.
+      as service paths.
       </t>
+
       <t> The segments can be thought of, in a simple way, to
       represent instructions such as "go to node N using the shortest
       path", "follow the shortest path for prefix P", "use
-      link/adjacency L", etc.  Each segment is identified by a 32 bit
+      link/node/ERO L", etc.  Each segment is identified by a 32 bit
       Segment Identifier (SID) (when unmodified MPLS data-plane is
       used, the SIDs are restricted to 20 bits). There are "global"
       segments that are known to all SR nodes in the local domain, and
@@ -172,8 +172,7 @@
               title="Link State info collection">
         <artwork>
                         +------------+
-                        | Consumer/  |
-                        | Controller |
+                        |  Consumer  |
                         +------------+
                               ^
                               |
@@ -232,9 +231,7 @@
       collect segment information in the "northbound direction" across
       IGP areas/autonomous systems and construct the segment stack
       that need to be added to an incoming packet to achieve the
-      desired end-to-end forwarding.  The controller can also use
-      BGP-LS to push the segment stack information in the "southbound"
-      direction to program the SR nodes. 
+      desired end-to-end forwarding. 
       </t>
     </section>
 
@@ -253,7 +250,7 @@
       <list style="symbols">
 	<t>TLV for Prefix-SID</t> 
 	<t>TLV for Adjacency-SID between two nodes as well as between nodes in a LAN</t>
-	<t>TLV for SID/Label binding</t>
+	<t>TLV for SID/Label binding for advertising paths from other protocols (and their optional ERO)</t>
 	<t>TLV for SR Capabilities</t>
 	<t>TLV for SR Algorithm</t>
       </list>
