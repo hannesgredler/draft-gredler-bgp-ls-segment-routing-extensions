@@ -73,14 +73,24 @@
     <keyword>OSPFv3</keyword>
 
     <abstract>
-      <t> Segment Routing (SR) allows for a packet to be steered
-      through a controlled set of instructions, called "segments", to
-      achieve flexible packet forwarding via topological paths as well
-      as services. The link-state routing protocols (IS-IS, OSPF and
-      OSPFv3) have been extended to advertise the segments. This draft
-      defines corresponding extensions to BGP Link-state
-      address-family to carry the segments via BGP.
+      <t>Segment Routing (SR) allows for a flexible definition of end-to-end
+      paths within link-state graphs by encoding paths as sequences of
+      topological sub-paths, called "segments".</t>
+
+      <t> The link-state routing protocols (IS-IS, OSPF and
+      OSPFv3) have been extended to advertise the segments.
+
+      By flooding path segments using IGPs, propagation is limited by the perimeter
+      of the IGP domain.
+      For building paths which span across IGP domains (e.g. multiple ASes)
+      the Border Gataway Protocol is extended, as its propagation perimeter
+      is not limited like the IGPs.
+      </t>      
+
+      <t>This draft defines  extensions to the BGP Link-state
+      address-family to carry path segment information via BGP.
       </t>
+
     </abstract>
 
     <note title="Requirements Language">
