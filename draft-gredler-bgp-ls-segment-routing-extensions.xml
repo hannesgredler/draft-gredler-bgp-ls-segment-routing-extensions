@@ -383,9 +383,6 @@
       registry for BGP-LS attribute TLVs based on table <xref
       target="BGPLSCODEPOINTS"/>.
       </t>
-      
-      <t>Note to RFC Editor: this section may be removed on publication as an
-      RFC.</t>
     </section>
 
     <section anchor="Manageability" title="Manageability Considerations">
@@ -395,8 +392,8 @@
       <section anchor="Operational-Considerations"
                title="Operational Considerations">
         <section anchor="Operations" title="Operations">
-          <t>Existing BGP operational procedures apply. No new operation
-          procedures are defined in this document.
+          <t>Existing BGP and BGP-LS operational procedures apply.
+	  No new operation procedures are defined in this document.
 	  </t>
         </section>
 
