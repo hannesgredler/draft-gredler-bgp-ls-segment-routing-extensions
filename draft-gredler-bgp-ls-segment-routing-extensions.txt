@@ -13,13 +13,19 @@ Expires: August 16, 2014                                      S. Previdi
 
 Abstract
 
-   Segment Routing (SR) allows for a packet to be steered through a
-   controlled set of instructions, called "segments", to achieve
-   flexible packet forwarding via topological paths as well as services.
+   Segment Routing (SR) allows for a flexible definition of end-to-end
+   paths within link-state graphs by encoding paths as sequences of
+   topological sub-paths, called "segments".
+
    The link-state routing protocols (IS-IS, OSPF and OSPFv3) have been
-   extended to advertise the segments.  This draft defines corresponding
-   extensions to BGP Link-state address-family to carry the segments via
-   BGP.
+   extended to advertise the segments.  By flooding path segments using
+   IGPs, propagation is limited by the perimeter of the IGP domain.  For
+   building paths which span across IGP domains (e.g.  multiple ASes)
+   the Border Gataway Protocol is extended, as its propagation perimeter
+   is not limited like the IGPs.
+
+   This draft defines  extensions to the BGP Link-state address-family
+   to carry path segment information via BGP.
 
 Requirements Language
 
@@ -37,27 +43,6 @@ Status of this Memo
    working documents as Internet-Drafts.  The list of current Internet-
    Drafts is at http://datatracker.ietf.org/drafts/current/.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Gredler, Ray & Previdi  Expires August 16, 2014                 [Page 1]
-
-Internet-Draft   BGP LS extensions for Segment Routing     February 2014
-
    Internet-Drafts are draft documents valid for a maximum of six months
    and may be updated, replaced, or obsoleted by other documents at any
    time.  It is inappropriate to use Internet-Drafts as reference
@@ -66,6 +51,13 @@ Internet-Draft   BGP LS extensions for Segment Routing     February 2014
    This Internet-Draft will expire on August 16, 2014.
 
 Copyright Notice
+
+
+
+Gredler, Ray & Previdi  Expires August 16, 2014                 [Page 1]
+
+Internet-Draft   BGP LS extensions for Segment Routing     February 2014
+
 
    Copyright (c) 2014 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
@@ -110,6 +102,14 @@ Table of Contents
    to the packet.  The SR capable nodes sequentially execute the
    instructions on the packet to achieve packet forwarding via required
    topological paths as well as services.
+
+
+
+
+
+
+
+
 
 
 
