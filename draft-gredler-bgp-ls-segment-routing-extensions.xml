@@ -57,6 +57,19 @@
       </address>
     </author>
 
+    <author fullname="Clarence Filsfils" initials="C." surname="Filsfils">
+      <organization>Cisco Systems, Inc.</organization>
+      <address>
+        <postal>
+          <street></street>
+          <city>Brussels</city>
+          <code></code>
+          <country>Belgium</country>
+        </postal>
+        <email>cfilsfil@cisco.com</email>
+      </address>
+    </author>
+
 
     <author fullname="Mach Chen" initials="M." surname="Chen">
       <organization>Huawei Technologies</organization>
@@ -108,11 +121,11 @@
       <t> The link-state routing protocols (IS-IS, OSPF and
       OSPFv3) have been extended to advertise the segments.
 
-      By flooding path segments using IGPs, propagation is limited by the perimeter
-      of the IGP domain.
-      For building paths which span across IGP domains (e.g. multiple ASes)
-      the Border Gataway Protocol is extended, as its propagation perimeter
-      is not limited like the IGPs.
+      But flooding based propagation of path segments using IGPs is
+      limited by the perimeter of the IGP domain. For building paths
+      which span across IGP domains (e.g. multiple ASes), the Border
+      Gataway Protocol (BGP) is better suited as its propagation
+      perimeter is not limited like the IGPs.
       </t>      
 
       <t>This draft defines  extensions to the BGP Link-state
@@ -134,7 +147,7 @@
     <section title="Introduction">
       <t>Segment Routing (SR) allows for a flexible definition of end-to-end
       paths within link-state topologies by encoding paths as sequences of
-      topological sub-paths, called "segments". 
+      topological sub-paths, called "segments".
 
       Segment routing is an amalgamation of source routing and MPLS.
       In Segment Routing, the ingress node prepends a sequence of
@@ -195,7 +208,7 @@
          IGP                 IGP                       IGP
         </artwork>
       </figure>
-      <t>Segment Routing (SR) allows the advertisement of single or
+      <t>Segment Routing (SR) allows advertisement of single or
       multi-hop paths. The flooding scope for the IGP extensions for
       Segment routing is IGP area-wide.  Consequently, the contents of a
       Link State Database (LSDB) or a Traffic Engineering Database
@@ -266,7 +279,7 @@
   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
         </artwork>
       </figure>
-      The 2 octet Type field values are defined in the tables <xref
+      The 2 octet Type field values are defined in <xref
       target="node-attribute_tlv"/>, <xref
       target="link-attribute_tlv"/>, and <xref
       target="prefix-attribute_tlv"/>. The next 2 octet Length field
@@ -373,6 +386,10 @@
         </texttable>
 	<t>The sections refer to <xref
 	target="I-D.previdi-isis-segment-routing-extensions"/>.
+	</t>
+	<t>These TLVs can ONLY be added to the Prefix Attribute whose
+	local node in the corresponding prefix NLRI is the node that
+	originates the corresponding SR TLV.
 	</t>
       </section>
     </section>
