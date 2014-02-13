@@ -123,7 +123,7 @@
       But flooding based propagation of path segments using IGPs is
       limited by the perimeter of the IGP domain. For building paths
       which span across IGP domains (e.g. multiple ASes), the Border
-      Gataway Protocol (BGP) is better suited as its propagation
+      Gateway Protocol (BGP) is better suited as its propagation
       perimeter is not limited like the IGPs.
       </t>      
 
