@@ -10,7 +10,7 @@
 <?rfc inline="yes"?>
 <?rfc compact="yes"?>
 <?rfc subcompact="no"?>
-<rfc category="std" docName="draft-gredler-idr-bgp-ls-segment-routing-extensions-00"
+<rfc category="std" docName="draft-gredler-idr-bgp-ls-segment-routing-extensions-01"
      ipr="trust200902">
   <front>
     <title abbrev="BGP LS extensions for Segment Routing">
