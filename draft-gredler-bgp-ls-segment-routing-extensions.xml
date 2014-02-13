@@ -307,17 +307,17 @@
           <c>1033</c>
           <c>SID/Label Binding</c>
           <c>variable</c>
-          <c>149 (section 2.4)</c>
+          <c><eref target="http://tools.ietf.org/html/draft-previdi-isis-segment-routing-extensions-04#section-2.4">149</eref></c>
 
           <c>1034</c>
           <c>SR Capabilities</c>
           <c>variable</c>
-          <c>2 (section 3.1)</c>
+          <c><eref target="http://tools.ietf.org/html/draft-previdi-isis-segment-routing-extensions-04#section-3.1">2</eref></c>
 
           <c>1035</c>
           <c>SR Algorithm</c>
           <c>variable</c>
-          <c>15 (section 3.2)</c>
+          <c><eref target="http://tools.ietf.org/html/draft-previdi-isis-segment-routing-extensions-04#section-3.2">15</eref></c>
         </texttable>
 	<t>The sections refer to <xref target="I-D.previdi-isis-segment-routing-extensions"/>.
 	</t>
@@ -341,12 +341,12 @@
           <c>1099</c>
           <c>Adjacency Segment Identifier (Adj-SID) TLV</c>
           <c>variable</c>
-          <c>31 (section 2.3.1)</c>
+          <c><eref target="http://tools.ietf.org/html/draft-previdi-isis-segment-routing-extensions-04#section-2.3.1">31</eref></c>
 
           <c>1100</c>
           <c>LAN Adjacency Segment Identifier (Adj-SID) TLV</c>
           <c>variable</c>
-          <c>32 (section 2.3.2)</c>
+          <c><eref target="http://tools.ietf.org/html/draft-previdi-isis-segment-routing-extensions-04#section-2.3.2">32</eref></c>
         </texttable>
 
 	<t>The sections refer to <xref
@@ -380,7 +380,7 @@
           <c>1158</c>
           <c>Prefix SID</c>
           <c>variable</c>
-          <c>3 (section 2.2)</c>
+          <c><eref target="http://tools.ietf.org/html/draft-previdi-isis-segment-routing-extensions-04#section-2.2">3</eref></c>
 
         </texttable>
 	<t>The sections refer to <xref
@@ -434,36 +434,36 @@
 	<c>1033</c>
 	<c>SID/Label Binding</c>
 	<c>variable</c>
-	<c>149 (section 2.4)</c>
+	<c><eref target="http://tools.ietf.org/html/draft-previdi-isis-segment-routing-extensions-04#section-2.4">149</eref></c>
 	
 	<c>1034</c>
 	<c>SR Capabilities</c>
 	<c>variable</c>
-	<c>2 (section 3.1)</c>
+	<c><eref target="http://tools.ietf.org/html/draft-previdi-isis-segment-routing-extensions-04#section-3.1">2</eref></c>
 	
 	<c>1035</c>
 	<c>SR Algorithm</c>
 	<c>variable</c>
-	<c>15 (section 3.2)</c>
+	<c><eref target="http://tools.ietf.org/html/draft-previdi-isis-segment-routing-extensions-04#section-3.2">15</eref></c>
 
        <!-- Link  Attribute TLVs -->
 
         <c>1099</c>
 	<c>Adjacency Segment Identifier (Adj-SID) TLV</c>
 	<c>variable</c>
-	<c>31 (section 2.3.1)</c>
+	<c><eref target="http://tools.ietf.org/html/draft-previdi-isis-segment-routing-extensions-04#section-2.3.1">31</eref></c>
        
 	<c>1100</c>
 	<c>LAN Adjacency Segment Identifier (Adj-SID) TLV</c>
 	<c>variable</c>
-	<c>32 (section 2.3.2)</c>
+	<c><eref target="http://tools.ietf.org/html/draft-previdi-isis-segment-routing-extensions-04#section-2.3.2">32</eref></c>
 
         <!-- Prefix Attributes TLVs -->
 
         <c>1158</c>
         <c>Prefix SID</c>
         <c>variable</c>
-        <c>3 (section 2.2)</c>
+	<c><eref target="http://tools.ietf.org/html/draft-previdi-isis-segment-routing-extensions-04#section-2.2">3</eref></c>
 	
       </texttable>
     </section>
