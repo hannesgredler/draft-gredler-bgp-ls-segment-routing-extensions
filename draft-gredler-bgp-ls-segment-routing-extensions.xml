@@ -10,7 +10,7 @@
 <?rfc inline="yes"?>
 <?rfc compact="yes"?>
 <?rfc subcompact="no"?>
-<rfc category="std" docName="draft-gredler-idr-bgp-ls-segment-routing-extension-01"
+<rfc category="std" docName="draft-gredler-idr-bgp-ls-segment-routing-extension-02"
      ipr="trust200902">
   <front>
     <title abbrev="BGP LS extensions for Segment Routing">
@@ -97,7 +97,7 @@
       </address>
     </author>
 
-    <date day="14" month="February" year="2014"/>
+    <date day="16" month="October" year="2014"/>
 
     <area>Routing</area>
 
